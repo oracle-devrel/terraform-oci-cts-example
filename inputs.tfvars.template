@@ -1,0 +1,39 @@
+lb_id                = "<your LB OCID here>"
+be_set_name          = "<your LB backend set name here>"
+region               = "<your OCI region here>"
+tenancy_ocid         = "<your tenancy OCID here>"
+user_ocid            = "<your user OCID here>"
+private_key          = "<your private API key here>"
+# note that only the private_key OR private_key_path must be given - just one or the other
+private_key_path     = "<your private API key path here>"
+private_key_password = "<the password of your private API key>"
+fingerprint          = "<your API key fingerprint here>"
+
+
+services = {
+  "service_name_here" : {
+    id              = "web"
+    name            = "web"
+    kind            = "test"
+    address         = "172.16.0.30"
+    port            = 80
+    meta            = {}
+    tags            = []
+    namespace       = null
+    status          = "passing"
+    node            = "test-1"
+    node_id         = "1234"
+    node_address    = "a.b.c.d"
+    node_datacenter = "dc1"
+    node_tagged_addresses = {
+      lan      = "a.b.c.d"
+      lan_ipv4 = "a.b.c.d"
+      wan      = "a.b.c.d"
+      wan_ipv4 = "a.b.c.d"
+    }
+    node_meta = {
+      consul-network-segment = ""
+    }
+    cts_user_defined_meta = {}
+  }
+}
