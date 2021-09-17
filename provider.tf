@@ -12,11 +12,14 @@ terraform {
 
 provider "oci" {
   region               = var.region
-  tenancy_ocid         = var.tenancy_ocid
-  user_ocid            = var.user_ocid
-  private_key          = local.private_key
-  private_key_password = var.private_key_password
-  fingerprint          = var.fingerprint
+  auth = "InstancePrincipal"
+  
+  # uncomment the following if testing locally (using an API key)
+  # tenancy_ocid         = var.tenancy_ocid
+  # user_ocid            = var.user_ocid
+  # private_key          = local.private_key
+  # private_key_password = var.private_key_password
+  # fingerprint          = var.fingerprint
 }
 
 locals {

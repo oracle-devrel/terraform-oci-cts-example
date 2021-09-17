@@ -45,13 +45,22 @@ variable "region" {
   description = "The OCI region to use."
 }
 
-variable "tenancy_ocid" {}
-variable "user_ocid" {}
+# optional vars, used when testing locally (using API key)
+variable "tenancy_ocid" {
+  default = ""
+}
+variable "user_ocid" {
+  default = ""
+}
 variable "private_key" {
   default = ""
 }
 variable "private_key_path" {
   default = ""
 }
-variable "private_key_password" {}
-variable "fingerprint" {}
+variable "private_key_password" {
+  default = ""
+}
+variable "fingerprint" {
+  default = ""
+}
