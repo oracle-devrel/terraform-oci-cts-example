@@ -1,3 +1,4 @@
+# Copyright (c) 2021 Oracle and/or its affiliates.
 
 variable "services" {
   description = "Consul services monitored by Consul-Terraform-Sync"
