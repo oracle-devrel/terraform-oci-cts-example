@@ -21,9 +21,9 @@ terraform destroy -var-file="inputs.tfvars"
 This will simulate adding a host to the existing backend set of the LB (notice that the `services` variable is populated in the `input.tfvars` file, simulating what Consul would be providing when used with CTS).
 
 ### Prerequisites
-You must have an OCI account.  [Click here](https://www.oracle.com/cloud/free/?source=:ow:o:s:nav::DevoGetStarted&intcmp=:ow:o:s:nav::DevoGetStarted) to create a new cloud account.
+You must have an OCI account.  [Click here](https://www.oracle.com/cloud/free/?source=:ex:tb:::::WWMK211203P00003&SC=:ex:tb:::::WWMK211203P00003&pcode=WWMK211203P00003) to create a new cloud account.
 
-You need to have Consul setup on OCI.  See ?? for a sample topolgoy that this was built on.  Feel free to deploy this topology and try it for yourself!
+You need to have Consul setup on OCI.  See [consul-testing-validation](https://github.com/oracle-devrel/consul-testing-validation) for a sample topolgoy that this was built on.  Feel free to deploy this topology and try it for yourself!
 
 ## Requirements
 
